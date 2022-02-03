@@ -10,8 +10,8 @@ class ScheduleWriter:
     def write_student_schedule(self, folder, student: Student, sess_start_info, sess_end_info):
         filepath = folder + '\{} Schedule.csv'.format(student.legal_name)
         with open(filepath, 'w', newline='') as csvfile:
-            csvWriter = csv.writer(csvfile, delimiter=' ',
-                                    quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            csvWriter = csv.writer(csvfile, delimiter=',',
+                                    quoting=csv.QUOTE_MINIMAL)
             for i in range(len(student.schedule)):
                 sess_header = 'Session{}'.format(i+1)
                 row = [sess_header, sess_start_info[i], sess_end_info[i], student.schedule[i]]
@@ -23,8 +23,8 @@ class ScheduleWriter:
             os.mkdir(folderpath)
         filepath = folderpath + '\{} Schedule.csv'.format(week)
         with open(filepath, 'w', newline='') as csvfile:
-            csvWriter = csv.writer(csvfile, delimiter=' ',
-                                    quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            csvWriter = csv.writer(csvfile, delimiter=',',
+                                    quoting=csv.QUOTE_MINIMAL)
             for i in range(num_sessions):
                 sess_header = 'Session{}'.format(i+1)
                 studentsList = prof_schedules[i][prof_name]

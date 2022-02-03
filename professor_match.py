@@ -6,17 +6,17 @@ from student import Student
 from schedule_writer import ScheduleWriter
 
 # -----CONSTANTS AND VARIABLES-----
-# CONST_STUDENT_DATA_PATH = "Data Files\Student Data - Feb 11.csv"
-# CONST_PROF_DATA_PATH = "Data Files\Professor Data - Feb 11.csv"
-# CONST_STUDENT_OUTPUT_PATH = "Data Files\Output\Student Schedules\Weekend 1 - Feb 11"
-# CONST_PROF_OUTPUT_PATH = "Data Files\Output\Professor Schedules"
-# CONST_WEEK = "Weekend 1"
-
-CONST_STUDENT_DATA_PATH = "Data Files\Student Data - Feb 25.csv"
-CONST_PROF_DATA_PATH = "Data Files\Professor Data - Feb 25.csv"
-CONST_STUDENT_OUTPUT_PATH = "Data Files\Output\Student Schedules\Weekend 2 - Feb 25"
+CONST_STUDENT_DATA_PATH = "Data Files\Student Data - Feb 11.csv"
+CONST_PROF_DATA_PATH = "Data Files\Professor Data - Feb 11.csv"
+CONST_STUDENT_OUTPUT_PATH = "Data Files\Output\Student Schedules\Weekend 1 - Feb 11"
 CONST_PROF_OUTPUT_PATH = "Data Files\Output\Professor Schedules"
-CONST_WEEK = "Weekend 2"
+CONST_WEEK = "Weekend 1"
+
+# CONST_STUDENT_DATA_PATH = "Data Files\Student Data - Feb 25.csv"
+# CONST_PROF_DATA_PATH = "Data Files\Professor Data - Feb 25.csv"
+# CONST_STUDENT_OUTPUT_PATH = "Data Files\Output\Student Schedules\Weekend 2 - Feb 25"
+# CONST_PROF_OUTPUT_PATH = "Data Files\Output\Professor Schedules"
+# CONST_WEEK = "Weekend 2"
 
 CONST_MAX_MEETING_SIZE = 20
 CONST_SESSION_START_HEADER = "Start time"
